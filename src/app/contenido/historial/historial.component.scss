@@ -1,0 +1,86 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+
+.black {
+    background-color: $red;
+    width: 100px;
+    height: 100%;
+    padding-bottom: 10px;
+
+    @include tablet {
+        width: 150px;
+    }
+
+    @include desktop {
+        width: 200px;
+    }
+
+} 
+
+.flex-historial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titulo {
+    color: $yellow;    
+    text-shadow: 2px 2px $purple;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid $yellow;
+    font-size: 20px;
+
+    @include tablet {
+        font-size: 32px;
+    }
+
+}
+
+.separacion {
+    margin-top: 15px;
+    
+}
+
+.flex-buscados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botones {
+    background-color: $purple;
+    color: $yellow;
+    padding: 2px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    max-width: 90px;
+
+    @include telefono {
+        padding: 3px 15px;
+        font-size: 15px;
+        max-width: 90px;
+    }
+
+    @include tablet {
+        padding: 5px 15px;
+        font-size: 25px;
+        max-width: 140px;
+    }
+    
+    @include desktop {
+        padding: 5px 15px;
+        font-size: 30px;
+        max-width: 190px;
+    }
+
+    
+
+}
+
+
+
+

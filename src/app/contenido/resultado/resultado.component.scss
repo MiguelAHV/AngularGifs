@@ -1,0 +1,28 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+
+.grid-resultados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+}
+
+.card {
+    border: 2px solid $purple;
+
+    p {
+        margin: 0;
+        padding: 3px;
+        text-align: center;
+    }
+}

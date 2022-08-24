@@ -1,0 +1,14 @@
+<div class="black">
+       
+  <div class="flex-historial">
+    <h1 class="titulo">Gifs Buscados</h1>
+    
+    <div class="separacion">
+      <div class="flex-buscados animate__animated animate__fadeInLeftBig">
+        <a *ngFor="let item of ingresados()" class="botones " href="#">{{item | titlecase}}</a>
+      </div>
+    </div>
+
+  </div>
+    
+</div>
