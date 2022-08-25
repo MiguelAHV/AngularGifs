@@ -54,26 +54,23 @@
 .botones {
     background-color: $purple;
     color: $yellow;
-    padding: 2px 15px;
+    padding: 5px 8px;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 10px;
     max-width: 90px;
+    overflow: hidden;
 
-    @include telefono {
-        padding: 3px 15px;
-        font-size: 15px;
-        max-width: 90px;
-    }
+    
 
     @include tablet {
-        padding: 5px 15px;
-        font-size: 25px;
+        
+        font-size: 18px;
         max-width: 140px;
     }
     
     @include desktop {
-        padding: 5px 15px;
-        font-size: 30px;
+        
+        font-size: 25px;
         max-width: 190px;
     }
 

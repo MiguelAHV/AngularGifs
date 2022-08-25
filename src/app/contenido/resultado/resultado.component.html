@@ -1,9 +1,9 @@
 
 <div class="grid-resultados">
 
-    <div class="card">
-      <img src="../assets/giphy.webp" alt="">
-      <p>pikachu</p>
+    <div class="card animate__animated animate__flipInX" *ngFor="let gif of resultados()">
+      <img [src]="gif.images.downsized.url" [alt]="gif.title">
+      <p>{{gif.title}}</p>
     </div>  
     
     

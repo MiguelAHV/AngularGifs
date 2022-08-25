@@ -14,6 +14,8 @@ export class HistorialComponent  {
 
   constructor( private gifsService: GifsService) { }
 
-  
+  volverBuscar(termino:string) {
+    this.gifsService.buscarGifs(termino);
+  }
 
 }

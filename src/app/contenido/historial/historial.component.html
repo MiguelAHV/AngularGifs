@@ -4,10 +4,12 @@
     <h1 class="titulo">Gifs Buscados</h1>
     
     <div class="separacion">
-      <div class="flex-buscados animate__animated animate__fadeInLeftBig">
-        <a *ngFor="let item of ingresados()" class="botones " href="#">{{item | titlecase}}</a>
+      <div class="flex-buscados">
+        <a  *ngFor="let item of ingresados()" (click)="volverBuscar(item)" class="botones animate__animated animate__fadeInLeftBig" href="#">{{item | titlecase}}</a>
       </div>
     </div>
+
+    
 
   </div>
     
